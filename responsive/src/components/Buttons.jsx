@@ -4,8 +4,8 @@ import { IoMdSettings } from "react-icons/io";
 import { FaPlus } from "react-icons/fa";
 
 const Buttons = () => {
-  const BlueButton = styled(Button)({
-    backgroundColor: "darkblue",
+  const BlueButton = styled(Button)(({ theme }) => ({
+    backgroundColor: theme.pallette.otherColor.main,
     color: "white",
     margin: 5,
     "&:hover": {
@@ -15,10 +15,10 @@ const Buttons = () => {
       backgroundColor: "gray",
       color: "white"
     }
-  });
+  }));
 
-  const RedButton = styled(Button)({
-    backgroundColor: "red",
+  const RedButton = styled(Button)(({ theme }) => ({
+    backgroundColor: theme.pallette.otherColor.main,
     color: "white",
     margin: 5,
     "&:hover": {
@@ -28,7 +28,7 @@ const Buttons = () => {
       backgroundColor: "gray",
       color: "white"
     }
-  });
+  }));
 
   return (
     <div>
