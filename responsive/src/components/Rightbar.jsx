@@ -9,10 +9,10 @@ export const Rightbar = () => {
       sx={{
         display: {
           xs: "none",
-          sm: "block",
-          md: "900px",
-          lg: "1200px",
-          xl: "1600px"
+          sm: "none",
+          md: "block",
+          lg: "block",
+          xl: "block"
         }
       }}
     >
