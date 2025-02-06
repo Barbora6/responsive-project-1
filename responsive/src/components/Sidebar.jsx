@@ -4,7 +4,8 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
-  ListItemText
+  ListItemText,
+  Switch
 } from "@mui/material";
 
 import { IoHomeSharp } from "react-icons/io5";
@@ -14,11 +15,12 @@ import { CgProfile } from "react-icons/cg";
 import { FaStore } from "react-icons/fa";
 import { MdGroups } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
+import { FaMoon } from "react-icons/fa";
 
 export const Sidebar = () => {
   return (
     <Box
-      bgcolor="lightgrey"
+      bgcolor="F5F5F5"
       flex={1}
       p={2}
       sx={{
@@ -87,6 +89,14 @@ export const Sidebar = () => {
               <CgProfile size={28} />
             </ListItemIcon>
             <ListItemText primary="Profile" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton component="a" href="#simple-list">
+            <ListItemIcon>
+              <FaMoon size={28} />
+            </ListItemIcon>
+            <Switch defaultChecked />
           </ListItemButton>
         </ListItem>
       </List>

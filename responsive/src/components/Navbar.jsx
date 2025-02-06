@@ -57,7 +57,7 @@ export const Navbar = () => {
           }}
         />
         <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          Navigace
+          BARA WEB
         </Typography>
 
         <Search>
