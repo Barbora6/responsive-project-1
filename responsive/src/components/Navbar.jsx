@@ -1,5 +1,3 @@
-// https://www.youtube.com/watch?v=fzxEECHnsvU&t=383s
-
 import {
   AppBar,
   Avatar,
@@ -56,8 +54,8 @@ export const Navbar = () => {
             display: { xs: "block", sm: "none", md: "none", lg: "none" }
           }}
         />
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block" } }}>
-          BARA WEB
+        <Typography variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
+          BaraCook
         </Typography>
 
         <Search>
@@ -78,7 +76,7 @@ export const Navbar = () => {
         </IconsContainer>
         <UserBox onClick={(e) => setOpen(true)}>
           <Avatar sx={{ width: 30, height: 30 }} src={image1} />
-          <Typography variant="span">Barbora</Typography>
+          <Typography variant="span">BS</Typography>
         </UserBox>
       </StyledToolbar>
       <Menu
