@@ -10,15 +10,16 @@ import {
   Toolbar,
   Typography
 } from "@mui/material";
-import { MdOutlinePets } from "react-icons/md";
 import Mail from "@mui/icons-material/Mail";
 import { NotificationAdd } from "@mui/icons-material";
+import { GiTechnoHeart } from "react-icons/gi";
 import image1 from "../img/stažený soubor.jpg";
 import { useState } from "react";
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
-  justifyContent: "space-between"
+  justifyContent: "space-around",
+  marginLeft: "5"
 });
 
 const Search = styled("div")(({ theme }) => ({
@@ -30,6 +31,7 @@ const Search = styled("div")(({ theme }) => ({
 
 const IconsContainer = styled(Box)(({ theme }) => ({
   display: "none",
+  width: "10%",
   gap: "20px",
   alignItems: "center",
   [theme.breakpoints.up("sm")]: { display: "flex" }
@@ -48,7 +50,7 @@ export const Navbar = () => {
   return (
     <AppBar position="sticky">
       <StyledToolbar>
-        <MdOutlinePets
+        <GiTechnoHeart
           fontSize={36}
           sx={{
             display: { xs: "block", sm: "none", md: "none", lg: "none" }
@@ -63,10 +65,10 @@ export const Navbar = () => {
         </Search>
         <IconsContainer>
           <Badge badgeContent={4} color="error">
-            <Mail />
+            <Mail sx={{ width: 30, height: 30 }} />
           </Badge>
           <Badge badgeContent={2} color="error">
-            <NotificationAdd />
+            <NotificationAdd sx={{ width: 30, height: 30 }} />
           </Badge>
           <Avatar
             sx={{ width: 30, height: 30 }}

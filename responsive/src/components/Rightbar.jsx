@@ -6,6 +6,7 @@ import {
   ImageListItem,
   Typography
 } from "@mui/material";
+import { Conversation } from "./Conversation";
 
 export const Rightbar = () => {
   return (
@@ -110,6 +111,7 @@ export const Rightbar = () => {
         <Typography variant="h6" fontWeight={100}>
           Latest Conversations:
         </Typography>
+        <Conversation />
       </Box>
     </Box>
   );
