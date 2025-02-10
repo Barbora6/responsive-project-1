@@ -17,7 +17,7 @@ import { MdGroups } from "react-icons/md";
 import { CgWebsite } from "react-icons/cg";
 import { FaMoon } from "react-icons/fa";
 
-export const Sidebar = () => {
+export const Sidebar = ({ mode, setMode }) => {
   return (
     <Box
       bgcolor="F5F5F5"
@@ -97,7 +97,10 @@ export const Sidebar = () => {
               <ListItemIcon>
                 <FaMoon size={28} />
               </ListItemIcon>
-              <Switch defaultChecked />
+              <Switch
+                defaultChecked
+                onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+              />
             </ListItemButton>
           </ListItem>
         </List>

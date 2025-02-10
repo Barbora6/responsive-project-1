@@ -56,8 +56,13 @@ export const Navbar = () => {
             display: { xs: "block", sm: "none", md: "none", lg: "none" }
           }}
         />
-        <Typography variant="h5" sx={{ display: { xs: "none", sm: "block" } }}>
-          BaraCook
+        <Typography
+          variant="h5"
+          letterSpacing={2}
+          fontWeight={600}
+          sx={{ display: { xs: "none", sm: "block" } }}
+        >
+          BarboraS
         </Typography>
 
         <Search>
